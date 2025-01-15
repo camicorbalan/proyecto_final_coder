@@ -1,0 +1,470 @@
+/* reseteo en 0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+/* barra de navegación  */
+.seccion-tablas a{ /*especifico por los cambios de bootstrap*/
+    text-decoration: none;
+    color: black;
+} 
+.seccion-tablas h2{ /*especifico por los cambios de bootstrap*/
+    color: rgb(88, 155, 178);
+    text-align: center;
+    font-size: 32px;
+    font-family: "Poppins", serif;
+}
+.seccion-tablas p{ /*especifico por los cambios de bootstrap*/
+    font-family: "Poppins", serif;
+}
+nav { /*nav*/
+    text-align: center;
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    flex-wrap: wrap;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 1.5
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 1.5
+}
+
+/* sección Hero */
+.Hero {
+    background-image: url('../img/sabrina_header.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-left: 100px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    background-attachment: fixed;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(24, 86, 181, 0.7); /*sombra para que no se pierda la letra*/
+}
+
+/* el cuerpo */
+body {
+    font-family: "Poppins", serif; /*fuente*/
+}
+body p { /*margenes y padding*/
+    margin: 20px;
+    padding: 0 100px;
+}
+
+
+/* footer */
+footer {
+    background-color: lightblue;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+footer img {
+    width: 20px;
+    height: 20px;
+}
+/* contenedor de las canciones */
+.contenedor-canciones {
+    display: flex; /* flexbox */
+    justify-content: space-between; /* espaciado parejo */
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin: 20px 0;
+}
+
+.contenedor-canciones div {
+    text-align: center; /* centro */
+    font-family: "Poppins", serif; /*fuente*/
+}
+
+.contenedor-canciones img {
+    width: 100%; /* ocupan el 100% */
+    height: auto; /* proporción de la imagen */
+    max-width: 300px; /* limita el tamaño máximo */
+    margin: 30px;
+}
+
+/* último lanzamiento */
+.ultimo-lanzamiento {
+    background-image: url(../img/portada-musica.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    color: white;
+    padding: 200px 0 0 200px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.ultimo-lanzamiento h2 {
+    font-size: 35px;
+    padding-left: 125px;
+    color: white;
+    text-align: justify;
+}
+.ultimo-lanzamiento a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Títulos */
+h2 {
+    color: rgb(88, 155, 178);
+    text-align: center;
+    font-size: 32px;
+}
+.subs h3 {
+    color: white;
+    background-color: lightblue;
+    padding: 10px 100px;
+    font-family: "Poppins", serif; /*fuente*/
+
+}
+.seccion-tablas {
+    padding-top: 60px; /* espacio para que el contenido no quede tapado por el navbar */
+}
+
+.actuacion{
+    padding-top: 70px;
+}
+.moda {
+    padding-top: 90 px;;
+}
+.moda section {
+    display: grid;/*grid*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+.moda section img {
+    width: 100%; /*tamaño de imagenes*/
+    height: 600px;
+    object-fit: cover;
+    padding: 30px;
+}
+.moda section h3, .moda section p { /*texto de moda*/
+    text-align: center;
+    width: 100%;
+    grid-column: span 3;
+    font-family: "Poppins", serif; /*fuente*/
+}
+.moda section h3{
+    color: white;
+    background-color: lightblue;
+    padding: 10px 100px;
+}
+.moda section a {
+    text-decoration:underline;
+    color: inherit;
+    line-height: 1.5
+}
+.moda section p {
+    text-align: center; /* centrar texto */
+    width: 100%;
+    margin-top: 10px; /* margen superior para separar de la imagen o título */
+    margin-bottom: 10px; /* margen inferior para separar de los otros elementos */
+    padding: 0 20px; /* espacio horizontal alrededor del texto */
+    font-size: 16px; /* tamaño de texto ajustado */
+    line-height: 1.5; /* espaciado de líneas para mejor legibilidad */
+    font-family: "Poppins", serif; /*fuente*/
+}
+.biografia {
+    display: grid; /* grid */
+    grid-template-columns: 300px 1fr; /*una columna de 300px para la imagen y la otra ocupa lo restante */
+    margin: 20px;
+}
+.biografia img {
+    width: 100%; /* imagen ocupe todo el espacio de su columna */
+    height: auto; /* mantiene las proporciones*/
+    object-fit: cover;
+    grid-column: 1; /* La imagen está en la primera columna */
+}
+.biografia p {
+    grid-column: 2; /* el texto va a la segunda columna */
+    padding-left: 20px;
+    text-align: left; /* texto a la izquierda */
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    font-family: "Poppins", serif; /*fuente*/
+}
+.subs h2{
+    color: rgb(88, 155, 178);
+    text-align: center;
+    font-size: 32px;
+    font-family: "Poppins", serif;
+
+}
+.subs h4{
+    font-family: "Poppins", serif;
+}
+.moda-titulo h2{
+    color: rgb(88, 155, 178);
+    text-align: center;
+    font-size: 32px;
+    font-family: "Poppins", serif;
+}
+.moda-titulo{
+    padding-top: 90px;
+}
+.moda h2{
+    .subs h2{
+        color: rgb(88, 155, 178);
+        text-align: center;
+        font-size: 32px;
+        font-family: "Poppins", serif;
+    }
+}
+@media screen and (max-width: 480px){ 
+    /*footer*/
+    footer {
+        font-size: 10px; /* texto más chico */
+        padding: 6px; /* menos padding */
+    }
+
+    footer img {
+        width: 16px; /* íconos más chicos */
+        height: 16px;
+    }
+    
+/* Hero*/
+    .Hero {
+        font-size: 24px; /*mas chiquito*/
+        padding-left: 20px;
+        text-align: center;
+        background-image: url('../img/sabrina_header_celular.jpg'); /*cambie imagen*/
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+/* texto de biografía */
+    .biografia p {
+        font-size: 14px; /* tamaño más chiquito */
+        line-height: 1.5; /*interlineado más chiquito */
+        padding-right: 10px;
+        text-align: left;
+    }
+    .biografia {
+        display: flex; /* flexbox*/
+        flex-direction: column; /* de forma vertical */
+        align-items: center; /* elemntos centrdos */
+        padding: 10px;
+}
+/* imagen biografía*/
+    .biografia img {
+        width: 100%;
+        margin-top: 20px; /* espacio encima de la imagen */
+}
+/* titulos más chiquitos*/ 
+    h2 {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+    h3 {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+/* contenedor de canciones */
+    .contenedor-canciones {
+        display: flex;
+        flex-direction: column; /*apilados*/
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    /* imagenes contenedor canciones */
+    .contenedor-canciones img {
+        width: 100%;
+        width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+}
+    .contenedor-canciones h4 {
+        font-size: 14px;
+} 
+/* último lanzamiento */
+    .ultimo-lanzamiento {
+        background-image: url(../img/portada-musica\ -\ copia.jpg); /*cambio foto*/
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* centro el contenido en y */
+        align-items: center; /* centro contenido en x */
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+}
+
+/* tamaño h1 */
+    .ultimo-lanzamiento h1 {
+        font-size: 2rem;
+        text-align: center;
+        justify-content: center;
+        padding:0;
+        margin-right:50%;
+}
+
+/*tamaño h2 */
+    .ultimo-lanzamiento h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+        margin-right:50%;
+}
+.moda section {
+    grid-template-columns: 1fr; /* una sola columna */
+    gap: 10px;
+    padding: 0 10px; /* padding lateral */
+}
+
+.moda section img {
+    width: 100%; /* imagen ocupa todo el ancho */
+    height: auto; 
+    padding: 10px; 
+}
+
+.moda section h3 {
+    padding: 10px 20px; /* menos el padding */
+    font-size: 18px; /*  tamaño de fuente */
+}
+
+.moda section p {
+    font-size: 14px; /* texto mas chico */
+    padding: 0 10px; 
+    margin-top: 5px; /* menos margen arriba */
+    margin-bottom: 5px; /* menos margen abajo */
+}
+}
+
+@media screen and (max-width: 768px) {
+    /* footer */
+    footer {
+        font-size: 12px; /* tamaño mas chico */
+        padding: 8px;
+    }
+
+    footer img {
+        width: 18px; /* mas chico*/
+        height: 18px;
+    }
+    .Hero {
+        font-size: 20px; 
+        padding-left: 15px; 
+        text-align: center;
+        background-image: url('../img/sabrina_header_celular.jpg'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 60vh; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .biografia p {
+        font-size: 16px; 
+        line-height: 1.6; 
+        padding-right: 15px; 
+        text-align: justify; /* justificado */
+        margin: 0 20px; 
+    }
+    .biografia {
+        display: flex; /* flexbox*/
+        flex-direction: column; /* de forma vertical */
+        align-items: center; /* elementos centrados */
+        padding: 20px;
+    }
+
+    /* imagen biografía */
+    .biografia img {
+        width: 100%;
+        max-width: 400px; 
+        margin-top: 20px;
+    }
+
+    /* títulos */
+    h2 {
+        font-size: 22px; 
+        padding: 10px 20px;
+    }
+
+    h3 {
+        font-size: 20px; 
+        padding: 10px 20px;
+    }
+
+    /* contenedor de canciones */
+    .contenedor-canciones {
+        display: flex;
+        flex-direction: column; /* apilados */
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    /* imagenes contenedor canciones */
+    .contenedor-canciones img {
+        width: 100%;
+        width: 350px; /*defino el ancho*/
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .seccion-tablas p{
+        padding: 0;
+        margin: 15px;
+}
+.moda section {
+    display: grid; /* grid */
+    grid-template-columns: repeat(2, 1fr); /* dos columnas por fila */
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.moda section img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.moda section h3, .moda section p {
+    text-align: center;
+    width: 100%;
+    grid-column: span 2; /* el texto ocupa todo ancho */
+}
+}
