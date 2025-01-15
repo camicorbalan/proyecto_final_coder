@@ -1,14 +1,14 @@
 @charset "UTF-8";
 /* Variables */
-/* Mixins */
-/* Reset */
+/* mixins */
+/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Barra de navegación */
+/* acomodo estilos por bootstrap */
 .seccion-tablas a {
   text-decoration: none;
   color: black;
@@ -25,6 +25,7 @@
   font-family: "Poppins", serif;
 }
 
+/*nav*/
 nav {
   display: flex;
   justify-content: center;
@@ -61,7 +62,7 @@ a {
   line-height: 1.5;
 }
 
-/* Sección Hero */
+/* hero */
 .Hero {
   background-image: url("../img/sabrina_header.avif");
   background-repeat: no-repeat;
@@ -80,7 +81,7 @@ a {
   text-shadow: 2px 2px 8px rgba(24, 86, 181, 0.7);
 }
 
-/* Cuerpo */
+/* cuerpo */
 body {
   font-family: "Poppins", serif;
 }
@@ -92,6 +93,7 @@ body p {
 
 /* Footer */
 footer {
+  position: fixed;
   background-color: lightblue;
   bottom: 0;
   width: 100%;
@@ -107,7 +109,7 @@ footer img {
   height: 20px;
 }
 
-/* Contenedor de las canciones */
+/* contenedor canciones */
 .contenedor-canciones {
   display: flex;
   justify-content: center;
@@ -130,7 +132,7 @@ footer img {
   margin: 30px;
 }
 
-/* Último lanzamiento */
+/* último lanzamiento */
 .ultimo-lanzamiento {
   background-image: url(../img/portada-musica.jpg);
   background-attachment: fixed;
@@ -162,7 +164,7 @@ footer img {
   color: inherit;
 }
 
-/* Títulos */
+/* títulos */
 h2 {
   color: rgb(88, 155, 178);
   text-align: center;
@@ -184,6 +186,7 @@ h2 {
   padding-top: 70px;
 }
 
+/*seccion moda*/
 .moda-titulo {
   padding-top: 90px;
 }
@@ -223,6 +226,7 @@ h2 {
   font-size: 16px;
 }
 
+/*biografia*/
 .biografia {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -261,6 +265,44 @@ h2 {
   font-family: "Poppins", serif;
 }
 
+/*animaciones*/
+.contenedor-canciones img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.contenedor-canciones img:hover {
+  transform: scale(1.05); /*se agrandan cuando el cursor está sobre ellas*/
+}
+
+nav ul li {
+  transition: opacity 0.3s ease;
+}
+
+nav ul li:hover {
+  opacity: 0.7; /* se desvanece la opción del menú cuando pasa el cursor sobre ella*/
+}
+
+footer {
+  opacity: 0; /* invisible */
+  transform: translateY(50px); /* se desplaza hacia abajo */
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0; /* opacidad 0 */
+    transform: translateY(50px); /* se desplaza hacia abajo */
+  }
+  60% {
+    opacity: 0.5; /* empieza a aparecer */
+    transform: translateY(-10px); /*se desplaza hacia arriba */
+  }
+  100% {
+    opacity: 1; /* queda visible */
+    transform: translateY(0); /* posición original */
+  }
+}
+/*responsive 768*/
 @media screen and (max-width: 768px) {
   /* footer */
   footer {
@@ -348,6 +390,7 @@ h2 {
     grid-column: span 2; /* el texto ocupa todo ancho */
   }
 }
+/*responsive 480*/
 @media screen and (max-width: 480px) {
   /*footer*/
   footer {
@@ -358,7 +401,7 @@ h2 {
     width: 16px; /* íconos más chicos */
     height: 16px;
   }
-  /* Hero*/
+  /* hero*/
   .Hero {
     font-size: 24px; /*mas chiquito*/
     padding-left: 20px;
@@ -446,6 +489,7 @@ h2 {
     padding: 0;
     margin-right: 50%;
   }
+  /*seccion moda*/
   .moda section {
     display: flex; /* Usamos flexbox */
     flex-direction: column; /* Asegura que los elementos se apilen verticalmente */

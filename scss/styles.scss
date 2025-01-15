@@ -99,7 +99,6 @@ nav ul li a {
   color: inherit;
   line-height: 1.5;
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -135,6 +134,7 @@ body p {
 
 /* Footer */
 footer {
+  position: fixed;
   background-color: $light-blue;
   bottom: 0;
   width: 100%;
@@ -292,6 +292,42 @@ h2 {
 .subs h4 {
   @include font-main;
 } 
+/*animaciones*/ 
+.contenedor-canciones img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.contenedor-canciones img:hover {
+  transform: scale(1.05); /*se agrandan cuando el cursor está sobre ellas*/
+}
+nav ul li {
+  transition: opacity 0.3s ease;
+}
+
+nav ul li:hover {
+  opacity: 0.7; /* se desvanece la opción del menú cuando pasa el cursor sobre ella*/
+}
+footer {
+  opacity: 0; /* invisible */
+  transform: translateY(50px); /* se desplaza hacia abajo */
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0; /* opacidad 0 */
+    transform: translateY(50px); /* se desplaza hacia abajo */
+  }
+  60% {
+    opacity: 0.5; /* empieza a aparecer */
+    transform: translateY(-10px); /*se desplaza hacia arriba */
+  }
+  100% {
+    opacity: 1; /* queda visible */
+    transform: translateY(0); /* posición original */
+  }
+}
+
 /*responsive 768*/
 
 @media screen and (max-width: 768px) {
