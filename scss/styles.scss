@@ -134,7 +134,7 @@ body p {
 
 /* Footer */
 footer {
-  position: fixed;
+  position: sticky;
   background-color: $light-blue;
   bottom: 0;
   width: 100%;
@@ -348,7 +348,11 @@ footer img:hover{
 .moda img:hover{
   transform: scale(1.05);
 }
-
+.seccion-tablas tr td {
+  transition: 0.3s ease;}
+.seccion-tablas tr td:hover {
+        transform: scale(1.01);  // Efecto de aumento suave
+      }
 /*responsive 768*/
 
 @media screen and (max-width: 768px) {
