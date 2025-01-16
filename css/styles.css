@@ -279,13 +279,17 @@ nav ul li {
 }
 
 nav ul li:hover {
-  opacity: 0.7; /* se desvanece la opción del menú cuando pasa el cursor sobre ella*/
+  opacity: 0.7; /* pierde opacidad la opción del menú cuando pasa el cursor sobre ella*/
 }
 
 footer {
   opacity: 0; /* invisible */
   transform: translateY(50px); /* se desplaza hacia abajo */
   animation: fadeInUp 1s ease-out forwards;
+}
+
+footer img:hover {
+  opacity: 0.7; /*pierde opacidad cuando el cursor pasa sobre el ícono*/
 }
 
 @keyframes fadeInUp {
@@ -302,6 +306,28 @@ footer {
     transform: translateY(0); /* posición original */
   }
 }
+.Hero h1 {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0; /*opacidad 0*/
+    transform: translateY(50px); /*se desplaza hacia abajo*/
+  }
+  to {
+    opacity: 1; /*visible*/
+    transform: translateY(0); /*posicion orgiinal*/
+  }
+}
+.moda img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.moda img:hover {
+  transform: scale(1.05);
+}
+
 /*responsive 768*/
 @media screen and (max-width: 768px) {
   /* footer */
