@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Variables */
+/* variables */
 /* mixins */
 /* reset */
 * {
@@ -193,7 +193,7 @@ h2 {
 
 .moda section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tres imágenes por fila por defecto */
+  grid-template-columns: repeat(3, 1fr); /* tres imágenes por fila */
   gap: 20px;
   justify-items: center;
   margin-bottom: 40px;
@@ -202,7 +202,7 @@ h2 {
 .moda section img {
   width: 100%;
   height: 600px;
-  object-fit: cover; /* Evita deformaciones */
+  object-fit: cover;
   padding: 10px;
 }
 
@@ -316,15 +316,17 @@ footer {
   .Hero {
     font-size: 24px;
     padding-left: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url("../img/sabrina_header_celular.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 60vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(24, 86, 181, 0.7);
   }
   .biografia p {
     font-size: 16px;
@@ -491,15 +493,15 @@ footer {
   }
   /*seccion moda*/
   .moda section {
-    display: flex; /* Usamos flexbox */
-    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    display: flex; /* flexbox */
+    flex-direction: column; /* elementos verticalmente */
     gap: 10px;
     padding: 0 10px;
   }
   .moda section img {
-    width: 100%; /* Las imágenes ocupan todo el ancho */
-    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-    object-fit: cover; /* Asegura que las imágenes se ajusten sin deformarse */
+    width: 100%; /* todo el ancho */
+    height: auto;
+    object-fit: cover;
     padding: 10px;
   }
   .moda section h3 {
