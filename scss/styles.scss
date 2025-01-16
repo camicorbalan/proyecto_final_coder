@@ -340,7 +340,7 @@ footer img:hover{
   }
   to {
     opacity: 1; /*visible*/
-    transform: translateY(0); /*posicion orgiinal*/
+    transform: translateY(0); /*posicion original*/
   }}
 .moda img {
   transition: transform 0.3s ease-in-out;
@@ -351,7 +351,7 @@ footer img:hover{
 .seccion-tablas tr td {
   transition: 0.3s ease;}
 .seccion-tablas tr td:hover {
-        transform: scale(1.01);  // Efecto de aumento suave
+        transform: scale(1.01);  // aumento suave
       }
 /*responsive 768*/
 
