@@ -314,8 +314,6 @@ footer {
 }
 footer img:hover{
   opacity:0.7; /*pierde opacidad cuando el cursor pasa sobre el ícono*/
-}
-
 @keyframes fadeInUp {
   0% {
     opacity: 0; /* opacidad 0 */
@@ -329,19 +327,18 @@ footer img:hover{
     opacity: 1; /* queda visible */
     transform: translateY(0); /* posición original */
   }
-}
-.Hero h1 {
-  animation: fadeInUp 1s ease-in-out;
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0; /*opacidad 0*/
-    transform: translateY(50px);/*se desplaza hacia abajo*/
+}}
+.Hero {
+  h1{animation: fadeInUp 1s ease-in-out;}
+  @keyframes fadeInUp {
+    from {
+      opacity: 0; /*opacidad 0*/
+      transform: translateY(50px);/*se desplaza hacia abajo*/
   }
-  to {
-    opacity: 1; /*visible*/
-    transform: translateY(0); /*posicion original*/
-  }}
+    to {
+      opacity: 1; /*visible*/
+      transform: translateY(0); /*posicion original*/
+  }}}
 .moda img {
   transition: transform 0.3s ease-in-out;
 }
@@ -351,8 +348,23 @@ footer img:hover{
 .seccion-tablas tr td {
   transition: 0.3s ease;}
 .seccion-tablas tr td:hover {
-        transform: scale(1.01);  // aumento suave
+  transform: scale(1.02);  /* aumento suave*/
+  }
+  .ultimo-lanzamiento{
+    h2, h1 {
+      position: relative;
+      transform: translateX(-100%); /* por fuera de la pantalla */
+      animation: slide-in 1s ease-out forwards; /* animación */
+  }
+  
+    @keyframes slide-in {
+      from {
+        transform: translateX(-100%);
       }
+      to {
+        transform: translateX(0);
+      }
+    }}
 /*responsive 768*/
 
 @media screen and (max-width: 768px) {
