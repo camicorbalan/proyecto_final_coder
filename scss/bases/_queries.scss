@@ -1,224 +1,231 @@
+/*use para variables y operaciones*/ 
+
 @use "_generales.scss" as *;
 @use "operaciones.scss" as *;
+
 /*responsive 768*/
 @media screen and (max-width: 768px) {
-  /* footer */
-  footer {
-      font-size: $font-size-small-tablet; /* tamaño mas chico */
-      padding: 8px;
-  }
 
-  footer img {
-      width: $img-footer-tablet; /* mas chico*/
-      height: $img-footer-tablet;
-  }
-  .Hero {
-      font-size: $font-size-medium; 
-      padding-left: 15px; 
-      @include flex-center();
-      background-image: url('../img/sabrina_header_celular.jpg'); 
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 60vh; 
-      display: flex;
-      @include text-center;
-      @include box-shadow;
-  }
-  .biografia p {
-      font-size: $font-size-small;
-      line-height: 1.6; 
-      padding-right: 15px; 
-      text-align: justify; /* justificado */
-      margin: 0 20px; 
-  }
-  .biografia {
-      display: flex; /* flexbox*/
-      flex-direction: column; /* de forma vertical */
-      align-items: center; /* elementos centrados */
-      padding: 20px;
-  }
+  /* footer */
+    footer {
+        font-size: $font-size-small-tablet; /* tamaño mas chico */
+        padding: 8px;
+    }
+
+    footer img {
+        width: $img-footer-tablet; /* mas chico*/
+        height: $img-footer-tablet;
+    }
+    /*hero*/
+
+    .Hero {
+        font-size: $font-size-medium; 
+        padding-left: 15px; 
+        @include flex-center();
+        background-image: url('../img/sabrina_header_celular.jpg'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 60vh; 
+        display: flex;
+        @include text-center;
+        @include box-shadow;
+    }
+    .biografia p {
+        font-size: $font-size-small;
+        line-height: 1.6; 
+        padding-right: 15px; 
+        text-align: justify; /* justificado */
+        margin: 0 20px; 
+    }
+    .biografia {
+        display: flex; /* flexbox*/
+        flex-direction: column; /* de forma vertical */
+        align-items: center; /* elementos centrados */
+        padding: 20px;
+    }
 
   /* imagen biografía */
-  .biografia img {
-      width: 100%;
-      max-width: 400px; 
-      margin-top: 20px;
-  }
+    .biografia img {
+        width: 100%;
+        max-width: 400px; 
+        margin-top: 20px;
+    }
 
   /* títulos */
-  h2 {
-      font-size: $font-size-medium; 
-      padding: 10px 20px;
-  }
+    h2 {
+        font-size: $font-size-medium; 
+        padding: 10px 20px;
+    }
 
-  h3 {
-      font-size: 20px; 
-      padding: 10px 20px;
-  }
+    h3 {
+        font-size: 20px; 
+        padding: 10px 20px;
+    }
 
   /* contenedor de canciones */
-  .contenedor-canciones {
-      display: flex;
-      flex-direction: column; /* apilados */
-      align-items: center;
-      padding: 0 20px;
-  }
+    .contenedor-canciones {
+        display: flex;
+        flex-direction: column; /* apilados */
+        align-items: center;
+        padding: 0 20px;
+    }
 
   /* imagenes contenedor canciones */
-  .contenedor-canciones img {
-      width: 100%;
-      width: 350px; /*defino el ancho*/
-      height: auto;
-      margin-bottom: 20px;
-  }
-  .seccion-tablas p{
-      padding: 0;
-      margin: 15px;
+    .contenedor-canciones img {
+        width: 100%;
+        width: 350px; /*defino el ancho*/
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .seccion-tablas p{
+        padding: 0;
+        margin: 15px;
 }
-.moda section {
-    display: grid; /* grid */
-    grid-template-columns: repeat(2, 1fr); /* dos columnas por fila */
-    gap: 20px;
-    justify-items: center;
-    margin-bottom: 40px;
+/*moda*/
+    .moda section {
+        display: grid; /* grid */
+        grid-template-columns: repeat(2, 1fr); /* dos columnas por fila */
+        gap: 20px;
+        justify-items: center;
+        margin-bottom: 40px;
+}
+    .moda section img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
 }
 
-.moda section img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+    .moda section h3, .moda section p {
+        text-align: center;
+        width: 100%;
+        grid-column: span 2; /* el texto ocupa todo ancho */
+}
 }
 
-.moda section h3, .moda section p {
-    text-align: center;
-    width: 100%;
-    grid-column: span 2; /* el texto ocupa todo ancho */
-}
-}
 /*responsive 480*/ 
 @media screen and (max-width: 480px){
-  /*footer*/
-  footer {
-      font-size: $font-size-small-phone;
-      padding: 6px; /* menos padding */
-  }
+    /*footer*/
+    footer {
+        font-size: $font-size-small-phone;
+        padding: 6px; /* menos padding */
+    }
 
-  footer img {
-      width: $img-footer-phone; /* íconos más chicos */
-      height: $img-footer-phone;
-  }
-  
-/* hero*/
-  .Hero {
-      font-size: $font-size-medium; /*mas chiquito*/
-      padding-left: 20px;
-      text-align: center;
-      background-image: $bg-hero; /*cambie imagen*/
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    footer img {
+        width: $img-footer-phone; /* íconos más chicos */
+        height: $img-footer-phone;
+    }
+
+    /* hero*/
+    .Hero {
+        font-size: $font-size-medium; /*mas chiquito*/
+        padding-left: 20px;
+        text-align: center;
+        background-image: $bg-hero; /*cambie imagen*/
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
-/* texto de biografía */
-  .biografia p {
-      font-size: $font-size-bio-phone; /* tamaño más chiquito */
-      line-height: 1.5; /*interlineado más chiquito */
-      padding-right: 10px;
-      text-align: left;
-  }
-  .biografia {
-      display: flex; /* flexbox*/
-      flex-direction: column; /* de forma vertical */
-      align-items: center; /* elemntos centrdos */
-      padding: 10px;
+    /* texto de biografía */
+    .biografia p {
+        font-size: $font-size-bio-phone; /* tamaño más chiquito */
+        line-height: 1.5; /*interlineado más chiquito */
+        padding-right: 10px;
+        text-align: left;
+    }
+    .biografia {
+        display: flex; /* flexbox*/
+        flex-direction: column; /* de forma vertical */
+        align-items: center; /* elemntos centrdos */
+        padding: 10px;
 }
-/* imagen biografía*/
-  .biografia img {
-      width: 100%;
-      margin-top: 20px; /* espacio encima de la imagen */
+    /* imagen biografía*/
+    .biografia img {
+        width: 100%;
+        margin-top: 20px; /* espacio encima de la imagen */
 }
-/* titulos más chiquitos*/ 
-  h2 {
-      font-size: $font-size-medium;
-      padding: 10px 20px;
-  }
-  h3 {
-      font-size: $font-size-small;
-      padding: 10px 20px;
-  }
-/* contenedor de canciones */
-  .contenedor-canciones {
-      display: flex;
-      flex-direction: column; /*apilados*/
-      align-items: center;
-      padding: 0 20px;
-  }
+    /* titulos más chiquitos*/ 
+    h2 {
+        font-size: $font-size-medium;
+        padding: 10px 20px;
+    }
+    h3 {
+        font-size: $font-size-small;
+        padding: 10px 20px;
+    }
+    /* contenedor de canciones */
+    .contenedor-canciones {
+        display: flex;
+        flex-direction: column; /*apilados*/
+        align-items: center;
+        padding: 0 20px;
+    }
 
   /* imagenes contenedor canciones */
-  .contenedor-canciones img {
-      width: 100%;
-      width: $max-img-width;
-      height: auto;
-      margin-bottom: 20px;
+    .contenedor-canciones img {
+        width: 100%;
+        width: $max-img-width;
+        height: auto;
+        margin-bottom: 20px;
 }
-  .contenedor-canciones h4 {
-      font-size: $font-size-bio-phone;
+    .contenedor-canciones h4 {
+        font-size: $font-size-bio-phone;
 } 
 /* último lanzamiento */
-  .ultimo-lanzamiento {
-      background-image:$bg-last-release; /*cambio foto*/
-      background-attachment: fixed;
-      background-position: center;
-      background-size: cover;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* centro el contenido en y */
-      align-items: center; /* centro contenido en x */
-      color: $white;
-      font-family: 'Times New Roman', Times, serif;
+    .ultimo-lanzamiento {
+        background-image:$bg-last-release; /*cambio foto*/
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* centro el contenido en y */
+        align-items: center; /* centro contenido en x */
+        color: $white;
+        font-family: 'Times New Roman', Times, serif;
 }
 
 /* tamaño h1 */
-  .ultimo-lanzamiento h1 {
-      font-size: 2rem;
-      @include text-center();
-      justify-content: center;
-      padding:0;
-      margin-right:50%;
+    .ultimo-lanzamiento h1 {
+        font-size: 2rem;
+        @include text-center();
+        justify-content: center;
+        padding:0;
+        margin-right:50%;
 }
 
 /*tamaño h2 */
-  .ultimo-lanzamiento h2 {
-      font-size: 1.5rem;
-      @include text-center();
-      justify-content: center;
-      padding: 0;
-      margin-right:50%;
+    .ultimo-lanzamiento h2 {
+        font-size: 1.5rem;
+        @include text-center();
+        justify-content: center;
+        padding: 0;
+        margin-right:50%;
 }
 /*seccion moda*/
-  .moda section {
-      display: flex; /* flexbox */
-      flex-direction: column; /* elementos verticalmente */
-      gap: 10px;
-      padding: 0 10px;
+    .moda section {
+        display: flex; /* flexbox */
+        flex-direction: column; /* elementos verticalmente */
+        gap: 10px;
+        padding: 0 10px;
 }
 
-.moda section img {
-      width: 100%; /* todo el ancho */
-      height: auto; 
-      object-fit: cover;
-      padding: 10px;
+    .moda section img {
+        width: 100%; /* todo el ancho */
+        height: auto; 
+        object-fit: cover;
+        padding: 10px;
 }
 
-.moda section h3 {
-      font-size: $font-size-small;
+    .moda section h3 {
+        font-size: $font-size-small;
 }
 
-.moda section p {
-      font-size: $font-size-bio-phone;
+    .moda section p {
+        font-size: $font-size-bio-phone;
 }}

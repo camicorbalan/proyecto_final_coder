@@ -1,4 +1,6 @@
 /*animaciones*/ 
+
+/*imágenes de álbumes y canciones*/
 .contenedor-canciones img {
     transition: transform 0.3s ease-in-out;
   }
@@ -6,6 +8,8 @@
   .contenedor-canciones img:hover {
     transform: scale(1.05); /*se agrandan cuando el cursor está sobre ellas*/
   }
+
+/*nav*/
   nav ul li {
     transition: opacity 0.3s ease;
   }
@@ -13,6 +17,8 @@
   nav ul li:hover {
     opacity: 0.7; /* pierde opacidad la opción del menú cuando pasa el cursor sobre ella*/
   }
+
+/*footer*/ 
   footer {
     opacity: 0; /* invisible */
     transform: translateY(50px); /* se desplaza hacia abajo */
@@ -34,40 +40,49 @@
         transform: translateY(0); /* posición original */
       }
     } }
+
+/*hero*/
   .Hero {
     h1{animation: fadeInUp 1s ease-in-out;}
-      @keyframes fadeInUp {
-        from {
-          opacity: 0; /*opacidad 0*/
-          transform: translateY(50px);/*se desplaza hacia abajo*/
-        }
-        to {
-          opacity: 1; /*visible*/
-          transform: translateY(0); /*posicion original*/
+    @keyframes fadeInUp {
+      from {
+        opacity: 0; /*opacidad 0*/
+        transform: translateY(50px);/*se desplaza hacia abajo*/
+      }
+      to {
+        opacity: 1; /*visible*/
+        transform: translateY(0); /*posicion original*/
     }}}
+
+/*moda*/
   .moda img {
     transition: transform 0.3s ease-in-out;
   }
   .moda img:hover{
     transform: scale(1.05);
   }
+
+  /*tabla*/
   .seccion-tablas tr td {
     transition: 0.3s ease;}
 
   .seccion-tablas tr td:hover {
     transform: scale(1.02);  /* aumento suave*/
     }
+  
+/*ultimo lanzamiento*/
+
   .ultimo-lanzamiento{
     h2, h1 {
       position: relative;
       transform: translateX(-100%); /* por fuera de la pantalla */
       animation: slide-in 1s ease-out forwards; /* animación */
     }
-      @keyframes slide-in {
-        from {
-          transform: translateX(-100%);
-        }
-        to {
-          transform: translateX(0);
-        }
-      }}
+    @keyframes slide-in {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }}

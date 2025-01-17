@@ -4,7 +4,15 @@
 /*fuente*/
 /*tamaños fuente*/
 /*imagenes*/
+/*use para las variables*/
 /* mixins */
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* acomodo estilos por bootstrap */
 .seccion-tablas a {
   text-decoration: none;
@@ -22,7 +30,18 @@
   font-family: "Poppins", serif;
 }
 
+/*cuerpo*/
+body {
+  font-family: "Poppins", serif;
+}
+
+body p {
+  margin: 20px;
+  padding: 0 100px;
+}
+
 /*animaciones*/
+/*imágenes de álbumes y canciones*/
 .contenedor-canciones img {
   transition: transform 0.3s ease-in-out;
 }
@@ -31,6 +50,7 @@
   transform: scale(1.05); /*se agrandan cuando el cursor está sobre ellas*/
 }
 
+/*nav*/
 nav ul li {
   transition: opacity 0.3s ease;
 }
@@ -39,6 +59,7 @@ nav ul li:hover {
   opacity: 0.7; /* pierde opacidad la opción del menú cuando pasa el cursor sobre ella*/
 }
 
+/*footer*/
 footer {
   opacity: 0; /* invisible */
   transform: translateY(50px); /* se desplaza hacia abajo */
@@ -63,6 +84,7 @@ footer img:hover {
   }
 }
 
+/*hero*/
 .Hero h1 {
   animation: fadeInUp 1s ease-in-out;
 }
@@ -77,6 +99,7 @@ footer img:hover {
   }
 }
 
+/*moda*/
 .moda img {
   transition: transform 0.3s ease-in-out;
 }
@@ -85,6 +108,7 @@ footer img:hover {
   transform: scale(1.05);
 }
 
+/*tabla*/
 .seccion-tablas tr td {
   transition: 0.3s ease;
 }
@@ -93,6 +117,7 @@ footer img:hover {
   transform: scale(1.02); /* aumento suave*/
 }
 
+/*ultimo lanzamiento*/
 .ultimo-lanzamiento h2, .ultimo-lanzamiento h1 {
   position: relative;
   transform: translateX(-100%); /* por fuera de la pantalla */
@@ -107,6 +132,7 @@ footer img:hover {
   }
 }
 
+/*use para variables y operaciones*/
 /* Footer */
 footer {
   position: sticky;
@@ -125,6 +151,7 @@ footer img {
   height: 20px;
 }
 
+/*use para variables y operaciones*/
 /* hero */
 .Hero {
   background-image: url("../img/sabrina_header.avif");
@@ -144,7 +171,7 @@ footer img {
   text-shadow: 2px 2px 8px rgba(24, 86, 181, 0.7);
 }
 
-/* títulos */
+/* títulos y subtítulos */
 h2 {
   color: rgb(88, 155, 178);
   text-align: center;
@@ -197,6 +224,9 @@ h2 {
   font-family: "Poppins", serif;
 }
 
+/*use para variables y operaciones*/
+/*moda*/
+/*para que el nav no tape el titulo*/
 .moda-titulo {
   padding-top: 90px;
 }
@@ -236,6 +266,7 @@ h2 {
   font-size: 16px;
 }
 
+/*use para variables y operaciones*/
 /*nav*/
 nav {
   display: flex;
@@ -279,40 +310,6 @@ a {
 
 .actuacion {
   padding-top: 70px;
-}
-
-/* reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* acomodo estilos por bootstrap */
-.seccion-tablas a {
-  text-decoration: none;
-  color: black;
-}
-
-.seccion-tablas h2 {
-  font-family: "Poppins", serif;
-  color: rgb(88, 155, 178);
-  text-align: center;
-  font-size: 32px;
-}
-
-.seccion-tablas p {
-  font-family: "Poppins", serif;
-}
-
-/*cuerpo*/
-body {
-  font-family: "Poppins", serif;
-}
-
-body p {
-  margin: 20px;
-  padding: 0 100px;
 }
 
 /* último lanzamiento */
@@ -370,6 +367,7 @@ body p {
   margin: 30px;
 }
 
+/*use para variables y operaciones*/
 /*responsive 768*/
 @media screen and (max-width: 768px) {
   /* footer */
@@ -381,6 +379,7 @@ body p {
     width: 12px; /* mas chico*/
     height: 12px;
   }
+  /*hero*/
   .Hero {
     font-size: 24px;
     padding-left: 15px;
@@ -442,6 +441,7 @@ body p {
     padding: 0;
     margin: 15px;
   }
+  /*moda*/
   .moda section {
     display: grid; /* grid */
     grid-template-columns: repeat(2, 1fr); /* dos columnas por fila */

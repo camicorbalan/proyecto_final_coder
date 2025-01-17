@@ -1,6 +1,7 @@
 
 @use "../bases/operaciones" as *;
 @use "../bases/generales" as*;
+
 /* último lanzamiento */
 .ultimo-lanzamiento {
     background-image: $bg-last-release;
