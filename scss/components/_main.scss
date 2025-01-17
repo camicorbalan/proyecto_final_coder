@@ -1,0 +1,69 @@
+
+@use "../bases/operaciones" as *;
+@use "../bases/generales" as *;
+/* hero */
+.Hero {
+    background-image: $bg-hero-normal;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    @include flex-center;
+    color: $white;
+    padding-left: 100px;
+    font-size: $font-size-hero;
+    font-family: $font-title;
+    background-attachment: fixed;
+    @include text-center;
+    @include box-shadow;
+  }
+/* títulos */
+h2 {
+  color: $primary-color;
+  @include text-center;
+  font-size: $font-size-large;
+}
+
+.subs h3 {
+  color: $white;
+  background-color: $light-blue;
+  padding: 10px 100px;
+  @include font-main;
+} 
+/*biografia*/
+.biografia {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  margin: 20px;
+  gap: 20px;
+}
+
+.biografia img {
+  @include img-responsive;
+  object-fit: cover;
+  grid-column: 1;
+  border-radius: 8px;
+}
+
+.biografia p {
+  grid-column: 2;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  @include font-main;
+}
+
+.subs h2 {
+  color: $primary-color;
+  @include text-center;
+  font-size: $font-size-large;
+  @include font-main;
+}
+
+.subs h4 {
+  @include font-main;
+} 
+
+  

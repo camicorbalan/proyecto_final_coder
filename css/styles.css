@@ -1,13 +1,10 @@
 @charset "UTF-8";
 /* variables */
+/*colores*/
+/*fuente*/
+/*tamaños fuente*/
+/*imagenes*/
 /* mixins */
-/* reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* acomodo estilos por bootstrap */
 .seccion-tablas a {
   text-decoration: none;
@@ -22,246 +19,6 @@
 }
 
 .seccion-tablas p {
-  font-family: "Poppins", serif;
-}
-
-/*nav*/
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: lightblue;
-  color: black;
-  padding: 10px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 24px;
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  margin: 0 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: inherit;
-  line-height: 1.5;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  line-height: 1.5;
-}
-
-/* hero */
-.Hero {
-  background-image: url("../img/sabrina_header.avif");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding-left: 100px;
-  font-size: 40px;
-  font-family: "Times New Roman", Times, serif;
-  background-attachment: fixed;
-  text-align: center;
-  text-shadow: 2px 2px 8px rgba(24, 86, 181, 0.7);
-}
-
-/* cuerpo */
-body {
-  font-family: "Poppins", serif;
-}
-
-body p {
-  margin: 20px;
-  padding: 0 100px;
-}
-
-/* Footer */
-footer {
-  position: sticky;
-  background-color: lightblue;
-  bottom: 0;
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-footer img {
-  width: 20px;
-  height: 20px;
-}
-
-/* contenedor canciones */
-.contenedor-canciones {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin: 20px 0;
-}
-
-.contenedor-canciones div {
-  text-align: center;
-  font-family: "Poppins", serif;
-}
-
-.contenedor-canciones img {
-  width: 100%;
-  height: auto;
-  max-width: 300px;
-  margin: 30px;
-}
-
-/* último lanzamiento */
-.ultimo-lanzamiento {
-  background-image: url(../img/portada-musica.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  color: white;
-  padding: 0 0 0 180px;
-  font-size: 40px;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.ultimo-lanzamiento h2 {
-  font-size: 35px;
-  padding-left: 70px;
-  color: white;
-  text-align: left;
-  margin-top: 20px;
-}
-
-.ultimo-lanzamiento a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* títulos */
-h2 {
-  color: rgb(88, 155, 178);
-  text-align: center;
-  font-size: 32px;
-}
-
-.subs h3 {
-  color: white;
-  background-color: lightblue;
-  padding: 10px 100px;
-  font-family: "Poppins", serif;
-}
-
-.seccion-tablas {
-  padding-top: 60px;
-}
-
-.actuacion {
-  padding-top: 70px;
-}
-
-/*seccion moda*/
-.moda-titulo {
-  padding-top: 90px;
-}
-
-.moda section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* tres imágenes por fila */
-  gap: 20px;
-  justify-items: center;
-  margin-bottom: 40px;
-}
-
-.moda section img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-  padding: 10px;
-}
-
-.moda section h3,
-.moda section p {
-  width: 100%;
-  text-align: center;
-  grid-column: span 3;
-}
-
-.moda section h3 {
-  color: white;
-  background-color: lightblue;
-  padding: 10px 100px;
-}
-
-.moda section p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 0 20px;
-  font-size: 16px;
-}
-
-/*biografia*/
-.biografia {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  margin: 20px;
-  gap: 20px;
-}
-
-.biografia img {
-  width: 100%;
-  height: auto;
-  max-width: 300px;
-  margin: 30px;
-  object-fit: cover;
-  grid-column: 1;
-  border-radius: 8px;
-}
-
-.biografia p {
-  grid-column: 2;
-  padding-left: 20px;
-  text-align: left;
-  font-size: 18px;
-  line-height: 1.6;
-  margin: 0;
-  font-family: "Poppins", serif;
-}
-
-.subs h2 {
-  color: rgb(88, 155, 178);
-  text-align: center;
-  font-size: 32px;
-  font-family: "Poppins", serif;
-}
-
-.subs h4 {
   font-family: "Poppins", serif;
 }
 
@@ -348,6 +105,269 @@ footer img:hover {
   to {
     transform: translateX(0);
   }
+}
+
+/* Footer */
+footer {
+  position: sticky;
+  background-color: lightblue;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+}
+
+/* hero */
+.Hero {
+  background-image: url("../img/sabrina_header.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-left: 100px;
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  background-attachment: fixed;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(24, 86, 181, 0.7);
+}
+
+/* títulos */
+h2 {
+  color: rgb(88, 155, 178);
+  text-align: center;
+  font-size: 32px;
+}
+
+.subs h3 {
+  color: white;
+  background-color: lightblue;
+  padding: 10px 100px;
+  font-family: "Poppins", serif;
+}
+
+/*biografia*/
+.biografia {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  margin: 20px;
+  gap: 20px;
+}
+
+.biografia img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin: 30px;
+  object-fit: cover;
+  grid-column: 1;
+  border-radius: 8px;
+}
+
+.biografia p {
+  grid-column: 2;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  font-family: "Poppins", serif;
+}
+
+.subs h2 {
+  color: rgb(88, 155, 178);
+  text-align: center;
+  font-size: 32px;
+  font-family: "Poppins", serif;
+}
+
+.subs h4 {
+  font-family: "Poppins", serif;
+}
+
+.moda-titulo {
+  padding-top: 90px;
+}
+
+.moda section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* tres imágenes por fila */
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+.moda section img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.moda section h3,
+.moda section p {
+  width: 100%;
+  text-align: center;
+  grid-column: span 3;
+}
+
+.moda section h3 {
+  color: white;
+  background-color: lightblue;
+  padding: 10px 100px;
+}
+
+.moda section p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+/*nav*/
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  color: black;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.5;
+}
+
+.seccion-tablas {
+  padding-top: 60px;
+}
+
+.actuacion {
+  padding-top: 70px;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* acomodo estilos por bootstrap */
+.seccion-tablas a {
+  text-decoration: none;
+  color: black;
+}
+
+.seccion-tablas h2 {
+  font-family: "Poppins", serif;
+  color: rgb(88, 155, 178);
+  text-align: center;
+  font-size: 32px;
+}
+
+.seccion-tablas p {
+  font-family: "Poppins", serif;
+}
+
+/*cuerpo*/
+body {
+  font-family: "Poppins", serif;
+}
+
+body p {
+  margin: 20px;
+  padding: 0 100px;
+}
+
+/* último lanzamiento */
+.ultimo-lanzamiento {
+  background-image: url("../img/portada-musica - copia.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  padding: 0 0 0 180px;
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.ultimo-lanzamiento h2 {
+  font-size: 35px;
+  padding-left: 70px;
+  color: white;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.ultimo-lanzamiento a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* contenedor canciones */
+.contenedor-canciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.contenedor-canciones div {
+  text-align: center;
+  font-family: "Poppins", serif;
+}
+
+.contenedor-canciones img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin: 30px;
 }
 
 /*responsive 768*/
@@ -511,7 +531,7 @@ footer img:hover {
   }
   /* último lanzamiento */
   .ultimo-lanzamiento {
-    background-image: url(../img/portada-musica\ -\ copia.jpg); /*cambio foto*/
+    background-image: url("../img/portada-musica - copia.jpg"); /*cambio foto*/
     background-attachment: fixed;
     background-position: center;
     background-size: cover;

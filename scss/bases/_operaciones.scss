@@ -1,0 +1,44 @@
+@use "_generales.scss" as *;
+/* mixins */
+@mixin text-center {
+    text-align: center;
+  }
+  
+  @mixin font-main {
+    font-family: $font-main;
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin box-shadow {
+    text-shadow: 2px 2px 8px rgba(24, 86, 181, 0.7);
+  }
+  
+  @mixin img-responsive {
+    width: 100%;
+    height: auto;
+    max-width: $max-img-width;
+    margin: 30px;
+  }
+  
+  /* acomodo estilos por bootstrap */
+  .seccion-tablas a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .seccion-tablas h2 {
+    @include font-main;
+    color: $primary-color;
+    @include text-center;
+    font-size: $font-size-large;
+  }
+  
+  .seccion-tablas p {
+    @include font-main;
+  }
+  

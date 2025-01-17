@@ -1,0 +1,35 @@
+@use "../bases/generales" as *;
+@use "../bases/operaciones" as *;
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* acomodo estilos por bootstrap */
+  .seccion-tablas a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .seccion-tablas h2 {
+    @include font-main;
+    color: $primary-color;
+    @include text-center;
+    font-size: $font-size-large;
+  }
+  
+  .seccion-tablas p {
+    @include font-main;
+  }
+  /*cuerpo*/
+  
+  body {
+    font-family: $font-main;
+  }
+  
+  body p {
+    margin: 20px;
+    padding: 0 100px;
+  }

@@ -1,0 +1,49 @@
+
+@use "../bases/operaciones" as *;
+@use "../bases/generales" as*;
+/* último lanzamiento */
+.ultimo-lanzamiento {
+    background-image: $bg-last-release;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    @include flex-center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: $white;
+    padding: 0 0 0 180px;
+    font-size: $font-size-hero;
+    font-family: $font-title;
+  }
+  
+  .ultimo-lanzamiento h2 {
+    font-size: $font-size-subtitle;
+    padding-left: 70px;
+    color: $white;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .ultimo-lanzamiento a {
+    text-decoration: none;
+    color: inherit;
+  }
+/* contenedor canciones */
+.contenedor-canciones {
+    @include flex-center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .contenedor-canciones div {
+    @include text-center;
+    @include font-main;
+  }
+  
+  .contenedor-canciones img {
+    @include img-responsive;
+  }

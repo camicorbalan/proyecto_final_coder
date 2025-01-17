@@ -1,0 +1,17 @@
+@use "../bases/generales" as *;
+@use "../bases/operaciones" as *;
+/* Footer */
+footer {
+    position: sticky;
+    background-color: $light-blue;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    @include flex-center;
+    gap: 30px;
+  }
+  
+  footer img {
+    width: 20px;
+    height: 20px;
+  }
