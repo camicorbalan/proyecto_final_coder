@@ -103,6 +103,29 @@
         width: 100%;
         grid-column: span 2; /* el texto ocupa todo ancho */
 }
+/*contenedor de albumes spotify*/
+    .contenedor-canciones-spotify {
+        padding: 10px;
+}
+
+    .contenedor-canciones-spotify div {
+        width: 90%;
+        max-width: 350px;
+}
+
+    .contenedor-canciones-spotify {
+        padding: 8px 0;
+}
+    iframe {
+        height: 300px;
+}
+    .contenedor-canciones-spotify h4{
+        font-size: $font-size-medium;
+        @include text-center;
+        white-space: nowrap; /* no se divide texto */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
 /*responsive 480*/ 
@@ -233,4 +256,24 @@
 
     .moda section p {
         font-size: $font-size-bio-phone;
-}}
+} 
+/*contenedor de albumes spotify*/
+    .contenedor-canciones-spotify {
+        padding: 5px;
+}
+
+    .contenedor-canciones-spotify div {
+        width: 95%;
+        max-width: 320px;
+}
+    iframe {
+        height: 250px; 
+}
+    .contenedor-canciones-spotify h4{
+        font-size: $font-size-small;
+        @include text-center;
+        white-space: nowrap; /* no se divide texto */
+        overflow: hidden;
+        text-overflow: ellipsis; /*puntos suspensivos*/
+}
+}

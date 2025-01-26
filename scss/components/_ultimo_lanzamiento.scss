@@ -48,3 +48,32 @@
   .contenedor-canciones img {
     @include img-responsive;
   }
+  .contenedor-canciones-spotify {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: 20px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.contenedor-canciones-spotify div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 80%; 
+    max-width: 400px;
+}
+
+.contenedor-canciones-spotify h4 {
+    @include text-center;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+}
+iframe {
+    border-radius: 12px;
+    width: 100%;
+    height: 352px;
+    margin-top: 10px;
+}
