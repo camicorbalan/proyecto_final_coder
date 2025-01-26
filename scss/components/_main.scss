@@ -9,6 +9,7 @@
     background-position: center;
     background-size: cover;
     height: 100vh;
+    padding: 0 120 px;
     @include flex-center;
     color: $white;
     padding-left: 100px;
@@ -21,6 +22,7 @@
 
 /* títulos y subtítulos */
 h2 {
+    margin: 40 px;
     color: $primary-color;
     @include text-center;
     font-size: $font-size-large;
@@ -31,6 +33,7 @@ h2 {
     background-color: $light-blue;
     padding: 10px 100px;
     @include font-main;
+    margin: 30 px 0;
 } 
 
 /*biografia*/
@@ -63,6 +66,7 @@ h2 {
     @include text-center;
     font-size: $font-size-large;
     @include font-main;
+    margin: 40 px;
 }
 
 .subs h4 {

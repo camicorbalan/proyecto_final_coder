@@ -159,6 +159,7 @@ footer img {
   background-position: center;
   background-size: cover;
   height: 100vh;
+  padding: 0 120 px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,6 +174,7 @@ footer img {
 
 /* títulos y subtítulos */
 h2 {
+  margin: 40 px;
   color: rgb(88, 155, 178);
   text-align: center;
   font-size: 32px;
@@ -183,6 +185,7 @@ h2 {
   background-color: lightblue;
   padding: 10px 100px;
   font-family: "Poppins", serif;
+  margin: 30 px 0;
 }
 
 /*biografia*/
@@ -218,6 +221,7 @@ h2 {
   text-align: center;
   font-size: 32px;
   font-family: "Poppins", serif;
+  margin: 40 px;
 }
 
 .subs h4 {
@@ -382,7 +386,7 @@ a {
   /*hero*/
   .Hero {
     font-size: 24px;
-    padding-left: 15px;
+    padding-left: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -400,7 +404,7 @@ a {
     line-height: 1.6;
     padding-right: 15px;
     text-align: justify; /* justificado */
-    margin: 0 20px;
+    margin: 15px 20px;
   }
   .biografia {
     display: flex; /* flexbox*/
@@ -418,10 +422,12 @@ a {
   h2 {
     font-size: 24px;
     padding: 10px 20px;
+    margin: 20px 15px;
   }
   h3 {
     font-size: 20px;
     padding: 10px 20px;
+    margin: 20px 15px;
   }
   /* contenedor de canciones */
   .contenedor-canciones {
@@ -491,6 +497,7 @@ a {
     line-height: 1.5; /*interlineado más chiquito */
     padding-right: 10px;
     text-align: left;
+    margin: 10 px;
   }
   .biografia {
     display: flex; /* flexbox*/
@@ -507,10 +514,12 @@ a {
   h2 {
     font-size: 24px;
     padding: 10px 20px;
+    margin: 15px 10px;
   }
   h3 {
     font-size: 16px;
     padding: 10px 20px;
+    margin: 15px 10px;
   }
   /* contenedor de canciones */
   .contenedor-canciones {
